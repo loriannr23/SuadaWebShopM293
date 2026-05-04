@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Drops | SUADA</title>
+    <link rel="icon" type="image/png" href="assets/img/suada_rose_favicon.png" />
+    <meta name="description" content="Explore SUADA capsule drops, from the current Desert Capsule to the archived Bloodmoon Capsule." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="site-header">
+        <div class="container header-inner">
+          <a class="brand-mark" href="index.html" aria-label="SUADA home">
+            <span class="brand-mark__name">SUADA</span>
+            <span class="brand-mark__claim">Born to stand out.</span>
+          </a>
+          <nav class="site-nav" aria-label="Primary navigation">
+            <a href="index.html" data-nav-link>Home</a>
+            <a href="products.html" data-nav-link>Shop</a>
+            <a href="drops.html" class="is-current" data-nav-link>Drops</a>
+            <a href="about.html" data-nav-link>About</a>
+            <a href="contact.html" data-nav-link>Contact</a>
+            <a href="orders.html" data-nav-link>Orders</a>
+          </nav>
+          <div class="header-actions">
+            <a class="cart-pill" href="cart.html">
+              <span>Cart</span>
+              <strong data-cart-count>00</strong>
+            </a>
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-label="Toggle navigation" data-nav-toggle>
+              Menu
+            </button>
+          </div>
+        </div>
+        <div class="container mobile-nav" data-mobile-nav>
+          <div class="mobile-nav__panel">
+            <a href="index.html" data-nav-link>Home</a>
+            <a href="products.html" data-nav-link>Shop</a>
+            <a href="drops.html" class="is-current" data-nav-link>Drops</a>
+            <a href="about.html" data-nav-link>About</a>
+            <a href="contact.html" data-nav-link>Contact</a>
+            <a href="orders.html" data-nav-link>Orders</a>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <section class="section">
+          <div class="container">
+            <div class="section-title reveal">
+              <p class="eyebrow">Capsules</p>
+              <h1>Drops</h1>
+              <p>
+                SUADA collections are released as compact, visual capsules. Each drop carries its own texture, color temperature and mood.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="section section--tight">
+          <div class="container drop-layout">
+            <article class="drop-banner reveal">
+              <div class="section-title">
+                <p class="eyebrow">Featured Drop</p>
+                <h2>Desert Capsule</h2>
+                <p>
+                  Warm neutrals, washed finishes and utility-led layering define the current release. The palette is lighter, dustier and intentionally quiet.
+                </p>
+              </div>
+              <div class="button-row">
+                <a class="button" href="products.html">Shop the Drop</a>
+                <a class="button-secondary" href="product.html?id=desert-oversized-hoodie">View Key Piece</a>
+              </div>
+              <div class="drop-banner__details">
+                <div class="drop-banner__detail">
+                  <strong>Sand / Stone</strong>
+                  <span>Palette</span>
+                </div>
+                <div class="drop-banner__detail">
+                  <strong>Layered Fits</strong>
+                  <span>Silhouette</span>
+                </div>
+                <div class="drop-banner__detail">
+                  <strong>Utility Details</strong>
+                  <span>Direction</span>
+                </div>
+              </div>
+            </article>
+            <article class="visual-panel visual-panel--desert reveal">
+              <div class="visual-panel__frame">
+                <img class="visual-panel__image" src="assets/img/DesertCapsuleVisualCover.png" alt="Desert Capsule visual cover" loading="lazy" />
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="section section--tight">
+          <div class="container">
+            <div class="product-grid" data-drop-desert></div>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="container drop-layout">
+            <article class="archive-panel reveal">
+              <div class="section-title">
+                <p class="eyebrow">Past Drop</p>
+                <h2>Bloodmoon Capsule</h2>
+                <p>
+                  Bloodmoon introduced the darker side of SUADA: crimson accents, dense blacks, stronger contrast and a heavier campaign mood. The capsule remains visible as archive.
+                </p>
+              </div>
+              <div class="button-row">
+                <a class="button-secondary" href="products.html">Browse Archive Pieces</a>
+              </div>
+              <div class="drop-banner__details">
+                <div class="drop-banner__detail">
+                  <strong>Crimson / Black</strong>
+                  <span>Palette</span>
+                </div>
+                <div class="drop-banner__detail">
+                  <strong>Heavy Textures</strong>
+                  <span>Material Mood</span>
+                </div>
+                <div class="drop-banner__detail">
+                  <strong>Archive Only</strong>
+                  <span>Status</span>
+                </div>
+              </div>
+            </article>
+            <article class="visual-panel visual-panel--bloodmoon reveal">
+              <div class="visual-panel__frame">
+                <img class="visual-panel__image" src="assets/img/BloodmoonArchiveCover.png" alt="Bloodmoon archive cover" loading="lazy" />
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="section section--tight">
+          <div class="container">
+            <div class="product-grid" data-drop-bloodmoon></div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div class="container">
+          <div class="footer-grid">
+            <div>
+              <a class="brand-mark" href="index.html">
+                <span class="brand-mark__name">SUADA</span>
+              </a>
+              <p>Capsule-based release format with editorial storytelling and premium mock product presentation.</p>
+            </div>
+            <div class="footer-links">
+              <a href="products.html">Shop</a>
+              <a href="about.html">About</a>
+              <a href="contact.html">Contact</a>
+            </div>
+            <div class="footer-links">
+              <span>Archive Access Placeholder</span>
+              <span>Instagram / @suada.studio</span>
+              <span>Press / press@suada-studio.com</span>
+            </div>
+          </div>
+          <p class="footer-note">© 2026 SUADA. Editorial drops page for a frontend-only school mock project.</p>
+        </div>
+      </footer>
+    </div>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

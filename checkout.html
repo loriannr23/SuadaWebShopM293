@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout | SUADA</title>
+    <link rel="icon" type="image/png" href="assets/img/suada_rose_favicon.png" />
+    <meta name="description" content="Mock checkout page for the SUADA frontend-only webshop project." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="site-header">
+        <div class="container header-inner">
+          <a class="brand-mark" href="index.html" aria-label="SUADA home">
+            <span class="brand-mark__name">SUADA</span>
+            <span class="brand-mark__claim">Born to stand out.</span>
+          </a>
+          <nav class="site-nav" aria-label="Primary navigation">
+            <a href="index.html" data-nav-link>Home</a>
+            <a href="products.html" data-nav-link>Shop</a>
+            <a href="drops.html" data-nav-link>Drops</a>
+            <a href="about.html" data-nav-link>About</a>
+            <a href="contact.html" data-nav-link>Contact</a>
+            <a href="orders.html" class="is-current" data-nav-link>Orders</a>
+          </nav>
+          <div class="header-actions">
+            <a class="cart-pill" href="cart.html">
+              <span>Cart</span>
+              <strong data-cart-count>00</strong>
+            </a>
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-label="Toggle navigation" data-nav-toggle>
+              Menu
+            </button>
+          </div>
+        </div>
+        <div class="container mobile-nav" data-mobile-nav>
+          <div class="mobile-nav__panel">
+            <a href="index.html" data-nav-link>Home</a>
+            <a href="products.html" data-nav-link>Shop</a>
+            <a href="drops.html" data-nav-link>Drops</a>
+            <a href="about.html" data-nav-link>About</a>
+            <a href="contact.html" data-nav-link>Contact</a>
+            <a href="orders.html" class="is-current" data-nav-link>Orders</a>
+          </div>
+        </div>
+      </header>
+
+      <main data-checkout-page>
+        <section class="section">
+          <div class="container">
+            <div class="section-title reveal">
+              <p class="eyebrow">Checkout</p>
+              <h1>Checkout</h1>
+              <p>Complete the form to create a locally stored order for the user. No real payment or backend is used.</p>
+            </div>
+            <div class="checkout-layout">
+              <div class="checkout-items" data-checkout-items></div>
+              <aside class="story-panel panel-pad reveal">
+                <div class="section-title">
+                  <p class="eyebrow">Customer Details</p>
+                  <h2>Delivery & Payment</h2>
+                </div>
+                <div class="detail-meta" data-checkout-summary></div>
+                <form class="contact-form" data-checkout-form novalidate>
+                  <label for="checkout-name">Full Name</label>
+                  <input id="checkout-name" name="checkout-name" type="text" placeholder="Your full name" />
+                  <label for="checkout-email">Email</label>
+                  <input id="checkout-email" name="checkout-email" type="email" placeholder="you@example.com" />
+                  <label for="checkout-address">Address</label>
+                  <input id="checkout-address" name="checkout-address" type="text" placeholder="Street and number" />
+                  <label for="checkout-city">City</label>
+                  <input id="checkout-city" name="checkout-city" type="text" placeholder="City" />
+                  <label for="checkout-payment">Payment Method</label>
+                  <select id="checkout-payment" name="checkout-payment">
+                    <option value="">Select payment</option>
+                    <option>Card</option>
+                    <option>TWINT</option>
+                    <option>Invoice</option>
+                  </select>
+                  <div class="button-row">
+                    <button class="button" type="submit">Place Order</button>
+                    <a class="button-secondary" href="cart.html">Back to Cart</a>
+                  </div>
+                  <p class="form-message" data-checkout-feedback></p>
+                </form>
+              </aside>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div class="container">
+          <div class="footer-grid">
+            <div>
+              <a class="brand-mark" href="index.html">
+                <span class="brand-mark__name">SUADA</span>
+              </a>
+            </div>
+            <div class="footer-links">
+              <a href="cart.html">Cart</a>
+              <a href="orders.html">Orders</a>
+              <a href="products.html">Shop</a>
+            </div>
+            <div class="footer-links">
+              <span>Checkout is simulated only</span>
+              <span>hello@suada-studio.com</span>
+              <span>@suada.studio</span>
+            </div>
+          </div>
+          <p class="footer-note">© 2026 SUADA. Mock checkout only, no real transaction is processed.</p>
+        </div>
+      </footer>
+    </div>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

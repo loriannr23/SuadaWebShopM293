@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | SUADA</title>
+    <link rel="icon" type="image/png" href="assets/img/suada_rose_favicon.png" />
+    <meta name="description" content="Contact SUADA for general inquiries, sizing help, collaborations and press." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="site-header">
+        <div class="container header-inner">
+          <a class="brand-mark" href="index.html" aria-label="SUADA home">
+            <span class="brand-mark__name">SUADA</span>
+            <span class="brand-mark__claim">Born to stand out.</span>
+          </a>
+          <nav class="site-nav" aria-label="Primary navigation">
+            <a href="index.html" data-nav-link>Home</a>
+            <a href="products.html" data-nav-link>Shop</a>
+            <a href="drops.html" data-nav-link>Drops</a>
+            <a href="about.html" data-nav-link>About</a>
+            <a href="contact.html" class="is-current" data-nav-link>Contact</a>
+            <a href="orders.html" data-nav-link>Orders</a>
+          </nav>
+          <div class="header-actions">
+            <a class="cart-pill" href="cart.html">
+              <span>Cart</span>
+              <strong data-cart-count>00</strong>
+            </a>
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-label="Toggle navigation" data-nav-toggle>
+              Menu
+            </button>
+          </div>
+        </div>
+        <div class="container mobile-nav" data-mobile-nav>
+          <div class="mobile-nav__panel">
+            <a href="index.html" data-nav-link>Home</a>
+            <a href="products.html" data-nav-link>Shop</a>
+            <a href="drops.html" data-nav-link>Drops</a>
+            <a href="about.html" data-nav-link>About</a>
+            <a href="contact.html" class="is-current" data-nav-link>Contact</a>
+            <a href="orders.html" data-nav-link>Orders</a>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <section class="section">
+          <div class="container contact-layout">
+            <article class="contact-card panel-pad reveal">
+              <div class="section-title">
+                <p class="eyebrow">Contact</p>
+                <h1>Get in touch with SUADA.</h1>
+                <p>
+                  For order questions, sizing guidance, collaborations or press requests, use the form below. This is a frontend mock, but the interaction behaves like a finished interface.
+                </p>
+              </div>
+              <form class="contact-form" action="#" method="get" data-contact-form>
+                <label for="name">Name</label>
+                <input id="name" name="name" type="text" placeholder="Your name" required />
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" placeholder="you@example.com" required />
+                <label for="subject">Subject</label>
+                <select id="subject" name="subject" required>
+                  <option value="">Select a subject</option>
+                  <option>General Inquiry</option>
+                  <option>Order Question</option>
+                  <option>Sizing Help</option>
+                  <option>Collaborations</option>
+                  <option>Press</option>
+                </select>
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Write your message here" required></textarea>
+                <div class="button-row">
+                  <button class="button" type="submit">Send Message</button>
+                </div>
+                <p class="form-message" data-contact-feedback></p>
+              </form>
+            </article>
+            <aside class="story-panel reveal">
+              <div class="section-title">
+                <p class="eyebrow">Direct Contact</p>
+                <h2>Response with a premium tone and a clear process.</h2>
+              </div>
+              <div class="grid-2">
+                <div class="detail-meta__item">
+                  <p class="eyebrow">Email</p>
+                  <strong>hello@suada-studio.com</strong>
+                </div>
+                <div class="detail-meta__item">
+                  <p class="eyebrow">Instagram</p>
+                  <strong>@suada.studio</strong>
+                </div>
+                <div class="detail-meta__item">
+                  <p class="eyebrow">Response Time</p>
+                  <strong>1-2 business days</strong>
+                </div>
+                <div class="detail-meta__item">
+                  <p class="eyebrow">Location</p>
+                  <strong>Zurich / Placeholder</strong>
+                </div>
+              </div>
+            </aside>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div class="container">
+          <div class="footer-grid">
+            <div>
+              <a class="brand-mark" href="index.html">
+                <span class="brand-mark__name">SUADA</span>
+              </a>
+              <p>Contact page with clean validation, premium spacing and frontend-only success feedback.</p>
+            </div>
+            <div class="footer-links">
+              <a href="index.html">Home</a>
+              <a href="products.html">Shop</a>
+              <a href="drops.html">Drops</a>
+              <a href="about.html">About</a>
+            </div>
+            <div class="footer-links">
+              <span>hello@suada-studio.com</span>
+              <span>@suada.studio</span>
+              <span>Mock support channel</span>
+            </div>
+          </div>
+          <p class="footer-note">© 2026 SUADA. Contact interactions are simulated with Vanilla JavaScript only.</p>
+        </div>
+      </footer>
+    </div>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

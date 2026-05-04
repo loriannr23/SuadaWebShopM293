@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SUADA | Born to stand out.</title>
+    <link rel="icon" type="image/png" href="assets/img/suada_rose_favicon.png" />
+    <meta
+      name="description"
+      content="SUADA is a dark luxury streetwear mock-shop featuring capsule drops, editorial visuals and premium silhouettes."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="site-header">
+        <div class="container header-inner">
+          <a class="brand-mark" href="index.html" aria-label="SUADA home">
+            <span class="brand-mark__name">SUADA</span>
+            <span class="brand-mark__claim">Born to stand out.</span>
+          </a>
+          <nav class="site-nav" aria-label="Primary navigation">
+            <a href="index.html" class="is-current" data-nav-link>Home</a>
+            <a href="products.html" data-nav-link>Shop</a>
+            <a href="drops.html" data-nav-link>Drops</a>
+            <a href="about.html" data-nav-link>About</a>
+            <a href="contact.html" data-nav-link>Contact</a>
+            <a href="orders.html" data-nav-link>Orders</a>
+          </nav>
+          <div class="header-actions">
+            <a class="cart-pill" href="cart.html" aria-label="Mock cart">
+              <span>Cart</span>
+              <strong data-cart-count>00</strong>
+            </a>
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-label="Toggle navigation" data-nav-toggle>
+              Menu
+            </button>
+          </div>
+        </div>
+        <div class="container mobile-nav" data-mobile-nav>
+          <div class="mobile-nav__panel">
+            <a href="index.html" class="is-current" data-nav-link>Home</a>
+            <a href="products.html" data-nav-link>Shop</a>
+            <a href="drops.html" data-nav-link>Drops</a>
+            <a href="about.html" data-nav-link>About</a>
+            <a href="contact.html" data-nav-link>Contact</a>
+            <a href="orders.html" data-nav-link>Orders</a>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <section class="hero">
+          <div class="container hero-grid">
+            <div class="hero-copy reveal">
+              <p class="eyebrow">Dark Luxury Streetwear</p>
+              <h1>SUADA</h1>
+              <p>
+                Born to stand out. A capsule-driven streetwear label built around shadow tones, sharp silhouettes and quiet confidence.
+              </p>
+              <div class="button-row">
+                <a class="button" href="products.html">Shop the Collection</a>
+                <a class="button-secondary" href="drops.html">Explore the Drops</a>
+              </div>
+              <div class="metrics">
+                <div class="metric">
+                  <strong>12</strong>
+                  <span>Curated pieces</span>
+                </div>
+                <div class="metric">
+                  <strong>02</strong>
+                  <span>Editorial capsules</span>
+                </div>
+                <div class="metric">
+                  <strong>01</strong>
+                  <span>Distinct brand world</span>
+                </div>
+              </div>
+            </div>
+            <div class="hero-aside reveal">
+              <article class="hero-panel">
+                <div class="drop-meta">
+                  <p class="eyebrow">Featured Drop</p>
+                  <span class="badge featured">Current</span>
+                </div>
+                <div>
+                  <p class="hero-panel__title">Desert Capsule</p>
+                  <p>Sand, stone and washed black translated into a precise urban uniform.</p>
+                </div>
+                <a class="button-ghost" href="drops.html">Enter the Capsule</a>
+              </article>
+              <article class="hero-panel hero-panel--secondary">
+                <div class="drop-meta">
+                  <p class="eyebrow">Archive</p>
+                  <span class="badge archive">Bloodmoon</span>
+                </div>
+                <div>
+                  <p class="hero-panel__title">Bloodmoon Capsule</p>
+                  <p>Darker, red-shifted campaign pieces preserved as part of the brand archive.</p>
+                </div>
+                <span class="hero-stat">Editorial mood. Premium restraint. Strong silhouette.</span>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="section section--tight">
+          <div class="container story-layout">
+            <article class="visual-panel visual-panel--desert reveal">
+              <div class="visual-panel__frame">
+                <img class="visual-panel__image" src="assets/img/DesertCapsuleVisualCover.png" alt="Desert Capsule campaign cover" loading="lazy" />
+              </div>
+            </article>
+            <article class="story-panel reveal">
+              <div class="section-title">
+                <p class="eyebrow">Featured Drop</p>
+                <h2>Muted tones. Controlled volume. Desert Capsule.</h2>
+                <p>
+                  The current capsule moves through sand, clay, stone and washed black. The result is soft in tone, structured in shape and made for layered everyday styling.
+                </p>
+              </div>
+              <div class="button-row">
+                <a class="button" href="drops.html">Explore the Drop</a>
+                <a class="button-secondary" href="products.html">View New Arrivals</a>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="container">
+            <div class="section-title reveal">
+              <p class="eyebrow">New Arrivals</p>
+              <h2>Selected pieces from the current rotation.</h2>
+            </div>
+            <div class="product-grid" data-home-featured></div>
+          </div>
+        </section>
+
+        <section class="section section--tight">
+          <div class="container">
+            <div class="section-title reveal">
+              <p class="eyebrow">Categories</p>
+              <h2>Built as a full streetwear wardrobe.</h2>
+            </div>
+            <div class="grid-4">
+              <article class="category-tile reveal">
+                <p class="eyebrow">Category</p>
+                <h3>Hoodies</h3>
+                <p>Dense fleece, oversized silhouettes and washed finish textures.</p>
+              </article>
+              <article class="category-tile reveal">
+                <p class="eyebrow">Category</p>
+                <h3>Tees</h3>
+                <p>Heavy cotton basics with clean proportions and subtle graphics.</p>
+              </article>
+              <article class="category-tile reveal">
+                <p class="eyebrow">Category</p>
+                <h3>Outerwear</h3>
+                <p>Utility-driven jackets shaped by editorial styling cues.</p>
+              </article>
+              <article class="category-tile reveal">
+                <p class="eyebrow">Category</p>
+                <h3>Accessories</h3>
+                <p>Finishing pieces that extend the brand language without noise.</p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="container story-layout">
+            <article class="story-panel reveal">
+              <div class="section-title">
+                <p class="eyebrow">Brand Story</p>
+                <h2>SUADA moves between fashion campaign energy and daily wearability.</h2>
+                <p>
+                  The brand language is clean but emotionally charged: strong serif headlines, restrained product naming, precise spacing and a mood that feels more editorial than commercial.
+                </p>
+              </div>
+              <div class="button-row">
+                <a class="button-secondary" href="about.html">Read the Brand Story</a>
+              </div>
+            </article>
+            <article class="visual-panel visual-panel--bloodmoon reveal">
+              <div class="visual-panel__frame">
+                <img class="visual-panel__image" src="assets/img/SuadaCoverPage1.png" alt="SUADA brand story visual" loading="lazy" />
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="section section--tight">
+          <div class="container">
+            <div class="section-title reveal">
+              <p class="eyebrow">Capsule Preview</p>
+              <h2>Desert Capsule highlights.</h2>
+            </div>
+            <div class="product-grid" data-desert-grid></div>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="container">
+            <article class="newsletter-box reveal">
+              <div class="section-title">
+                <p class="eyebrow">Newsletter</p>
+                <h2>Receive early access to upcoming drops.</h2>
+                <p>Sign up for product previews, campaign releases and limited capsule notifications.</p>
+              </div>
+              <form class="newsletter-form" action="#" method="get" data-newsletter-form>
+                <div class="form-row">
+                  <input class="field" type="email" name="email" placeholder="Email address" aria-label="Email address" required />
+                  <button class="button" type="submit">Join SUADA</button>
+                </div>
+                <p class="form-message" data-form-message></p>
+              </form>
+            </article>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div class="container">
+          <div class="footer-grid">
+            <div>
+              <a class="brand-mark" href="index.html">
+                <span class="brand-mark__name">SUADA</span>
+              </a>
+              <p>Premium capsule streetwear with a dark editorial identity and a strong visual system.</p>
+            </div>
+            <div class="footer-links">
+              <a href="index.html">Home</a>
+              <a href="products.html">Shop</a>
+              <a href="drops.html">Drops</a>
+              <a href="about.html">About</a>
+              <a href="contact.html">Contact</a>
+            </div>
+            <div class="footer-links">
+              <span>Instagram / @suada.studio</span>
+              <span>Editorial / Press Placeholder</span>
+              <span>Contact / hello@suada-studio.com</span>
+            </div>
+          </div>
+          <p class="footer-note">© 2026 SUADA. Mock streetwear webshop for a school project. No real checkout or backend functionality.</p>
+        </div>
+      </footer>
+    </div>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

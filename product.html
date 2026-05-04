@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product | SUADA</title>
+    <link rel="icon" type="image/png" href="assets/img/suada_rose_favicon.png" />
+    <meta name="description" content="SUADA product detail page with gallery placeholders, accordions and mock add-to-cart interaction." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="site-header">
+        <div class="container header-inner">
+          <a class="brand-mark" href="index.html" aria-label="SUADA home">
+            <span class="brand-mark__name">SUADA</span>
+            <span class="brand-mark__claim">Born to stand out.</span>
+          </a>
+          <nav class="site-nav" aria-label="Primary navigation">
+            <a href="index.html" data-nav-link>Home</a>
+            <a href="products.html" class="is-current" data-nav-link>Shop</a>
+            <a href="drops.html" data-nav-link>Drops</a>
+            <a href="about.html" data-nav-link>About</a>
+            <a href="contact.html" data-nav-link>Contact</a>
+            <a href="orders.html" data-nav-link>Orders</a>
+          </nav>
+          <div class="header-actions">
+            <a class="cart-pill" href="cart.html">
+              <span>Cart</span>
+              <strong data-cart-count>00</strong>
+            </a>
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-label="Toggle navigation" data-nav-toggle>
+              Menu
+            </button>
+          </div>
+        </div>
+        <div class="container mobile-nav" data-mobile-nav>
+          <div class="mobile-nav__panel">
+            <a href="index.html" data-nav-link>Home</a>
+            <a href="products.html" class="is-current" data-nav-link>Shop</a>
+            <a href="drops.html" data-nav-link>Drops</a>
+            <a href="about.html" data-nav-link>About</a>
+            <a href="contact.html" data-nav-link>Contact</a>
+            <a href="orders.html" data-nav-link>Orders</a>
+          </div>
+        </div>
+      </header>
+
+      <main data-product-page>
+        <section class="section">
+          <div class="container detail-layout">
+            <div class="product-gallery reveal">
+              <div class="product-visual product-gallery__hero">
+                <span class="product-visual__tag">Primary View</span>
+                <img class="product-visual__image" data-product-visual-primary src="assets/img/DesertOversizedHoodie.png" alt="Primary product view" />
+              </div>
+              <div class="product-gallery__thumbs">
+                <div class="product-gallery__thumb product-visual product-visual--small">
+                  <span class="product-visual__tag">Detail</span>
+                  <img class="product-visual__image" data-product-visual-secondary src="assets/img/DesertOversizedHoodie.png" alt="Product detail view" />
+                </div>
+                <div class="product-gallery__thumb product-visual product-visual--small product-visual--bloodmoon">
+                  <span class="product-visual__tag">Campaign</span>
+                  <img class="product-visual__image" data-product-visual-campaign src="assets/img/DesertOversizedHoodie.png" alt="Product campaign view" />
+                </div>
+              </div>
+            </div>
+            <article class="product-detail reveal">
+              <p class="eyebrow">Product Detail</p>
+              <h1 data-product-name>SUADA Product</h1>
+              <div class="price-line">
+                <strong data-product-price>CHF 0</strong>
+                <span class="badge" data-product-status>Current</span>
+              </div>
+              <p data-product-short></p>
+              <div class="detail-meta">
+                <div class="detail-meta__item">
+                  <p class="eyebrow">Color</p>
+                  <strong data-product-color></strong>
+                </div>
+                <div class="detail-meta__item">
+                  <p class="eyebrow">Drop</p>
+                  <strong data-product-drop></strong>
+                </div>
+                <div class="detail-meta__item">
+                  <p class="eyebrow">Fit</p>
+                  <strong>Relaxed / Oversized</strong>
+                </div>
+              </div>
+              <div>
+                <p class="eyebrow">Select Size</p>
+                <div class="filter-group" data-size-options></div>
+              </div>
+              <div class="button-row">
+                <button class="button" type="button" data-add-to-cart>Add to Cart</button>
+                <a class="button-secondary" href="products.html">Back to Shop</a>
+              </div>
+              <p class="cart-feedback" data-cart-feedback></p>
+              <div class="accordion">
+                <details class="accordion__item" open>
+                  <summary class="accordion__trigger">Description <span>+</span></summary>
+                  <div class="accordion__content">
+                    <p data-product-description></p>
+                  </div>
+                </details>
+                <details class="accordion__item">
+                  <summary class="accordion__trigger">Details <span>+</span></summary>
+                  <div class="accordion__content">
+                    <p data-product-details></p>
+                  </div>
+                </details>
+                <details class="accordion__item">
+                  <summary class="accordion__trigger">Shipping & Returns <span>+</span></summary>
+                  <div class="accordion__content">
+                    <p>Mock information: dispatch within 2 to 4 business days, with free returns for unworn items within 14 days.</p>
+                  </div>
+                </details>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="section section--tight">
+          <div class="container">
+            <div class="video-panel reveal visual-panel visual-panel--desert">
+              <div class="section-title">
+                <p class="eyebrow">Campaign Mood</p>
+                <h2>Editorial motion placeholder.</h2>
+                <p>
+                  Replace this block later with a local campaign clip or a YouTube embed. The section already provides the final layout and atmosphere.
+                </p>
+              </div>
+              <div class="visual-panel__frame">
+                <img class="visual-panel__image" src="assets/img/DesertCapsuleVisualCover.png" alt="Campaign mood visual" loading="lazy" />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="container">
+            <div class="section-title reveal">
+              <p class="eyebrow">Related Products</p>
+              <h2>Continue the look.</h2>
+            </div>
+            <div class="product-grid" data-related-products></div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div class="container">
+          <div class="footer-grid">
+            <div>
+              <a class="brand-mark" href="index.html">
+                <span class="brand-mark__name">SUADA</span>
+              </a>
+              <p>Premium silhouettes, capsule storytelling and a clean dark-luxury interface.</p>
+            </div>
+            <div class="footer-links">
+              <a href="products.html">Shop All</a>
+              <a href="drops.html">Current Drop</a>
+              <a href="about.html">Brand Story</a>
+              <a href="contact.html">Contact</a>
+            </div>
+            <div class="footer-links">
+              <span>Mock Customer Care</span>
+              <span>hello@suada-studio.com</span>
+              <span>Instagram / @suada.studio</span>
+            </div>
+          </div>
+          <p class="footer-note">© 2026 SUADA. Static product page for a mock webshop.</p>
+        </div>
+      </footer>
+    </div>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
