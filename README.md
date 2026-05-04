@@ -63,6 +63,15 @@ python -m http.server
 
 Danach kann die Website im Browser über `http://localhost:8000` geöffnet werden.
 
+## Hosting und Repository
+
+Die Website ist nur als statische Frontend-Version auf Netlify gehostet:
+
+- Netlify: https://suada-webshop.netlify.app/
+- GitHub: https://github.com/loriannr23/SuadaWebShopM293
+
+Der GitHub-Stand dient als Quellcode-Ablage des Projekts. Netlify stellt daraus die statische Website bereit.
+
 ## Projektstruktur
 
 | Pfad | Bedeutung |
